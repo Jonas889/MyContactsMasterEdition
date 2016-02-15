@@ -148,6 +148,7 @@
     <Content Include="Showcontact.aspx" />
     <Content Include="Addcontact.aspx" />
     <Content Include="TestUserControl.ascx" />
+    <Content Include="DatabasBU\backupDB" />
     <None Include="scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="scripts\bootstrap.js" />
     <Content Include="scripts\bootstrap.min.js" />
