@@ -36,7 +36,7 @@ namespace MyContactsMasterEdition
                     //ListItem tmpItem = new ListItem(myReader["Firstname"].ToString() + " " + myReader["Lastname"].ToString(), myReader["CID"].ToString());
                     //LBoxContact.Items.Add(tmpItem);
                     // Create instance of the UserControl SimpleControl
-                    WebUserControl1 contactCard = (WebUserControl1)Page.LoadControl("~/TestUserControl.ascx");
+                    WebUserControl1 contactCard = new WebUserControl1();
 
 
 

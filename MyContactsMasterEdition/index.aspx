@@ -13,7 +13,7 @@
         //Skickar upp modal med ID från sender i en textbox
         function myFunction(sender) {
             var CID = (sender.attr("class"));
-            var $modal = $('#myModal');
+            var $moda = $('#myModal');
             $userName = $modal.find('#CPHMain_userID');
             $userName.val(CID);
             __doPostBack();
@@ -76,13 +76,13 @@
                 <div class="modal-body wrapper_main">
                     <asp:TextBox ID="userID" runat="server" AutoPostBack="true" OnTextChanged="userID_TextChanged" style="display:none"></asp:TextBox>
                     <!-- <p>ID:<asp:TextBox ID="CID" runat="server" CssClass="form-control"></asp:TextBox></p>-->
-                    <div id="left" class="wrapper_main" runat="server">
+                    <div id="left" class="wrapper_modal" runat="server">
                     </div>
-                    <div id="innerleft" class="wrapper_main" runat="server">
+                    <div id="innerleft" class="wrapper_modal" runat="server">
                     </div>
-                    <div id="innerright" class="wrapper_main" runat="server">
+                    <div id="innerright" class="wrapper_modal" runat="server">
                     </div>
-                    <div id="right" class="wrapper_main" runat="server">
+                    <div id="right" class="wrapper_modal" runat="server">
                     </div>
                 </div>
                 <div class="modal-footer">
