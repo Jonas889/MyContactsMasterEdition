@@ -76,6 +76,8 @@
                 <div class="modal-body wrapper_main">
                     <asp:TextBox ID="userID" runat="server" AutoPostBack="true" OnTextChanged="userID_TextChanged" style="display:none"></asp:TextBox>
                     <!-- <p>ID:<asp:TextBox ID="CID" runat="server" CssClass="form-control"></asp:TextBox></p>-->
+                    
+                    <!--Knasdivar-->
                     <div id="left" class="wrapper_modal" runat="server">
                     </div>
                     <div id="innerleft" class="wrapper_modal" runat="server">
