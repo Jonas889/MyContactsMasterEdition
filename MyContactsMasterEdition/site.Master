@@ -1,0 +1,69 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="site.Master.cs" Inherits="MyContactsMasterEdition.index1" %>
+
+<%@ Register Src="~/TestUserControl.ascx" TagPrefix="uc1" TagName="TestUserControl" %>
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <script src="scripts/jquery-1.9.1.min.js"></script>
+    <script src="scripts/bootstrap.js"></script>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="CSS/myStyle.css" rel="stylesheet" />
+    <link href="CSS/TestUserControl.css" rel="stylesheet" />
+    <script>
+        
+
+    </script>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="head">
+            <asp:ContentPlaceHolder ID="CPHHeader" runat="server">
+                <img src="Images/3d_golden_text_effect.png" />
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="left">
+            <div class="container">
+                <!-- <a  href="#" onclick="window.location.href='./Showcontact.aspx';">Showcontact</a>-->
+                <asp:ContentPlaceHolder ID="CPHLeft" runat="server">
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <nav class="nav-sidebar">
+                                <ul class="nav">
+                                    <li class="active"><a href="index.aspx">Home</a></li>
+                                    <li><a href="#" onclick="window.location.href='./Showcontact.aspx?CID='+$('#CPHMain_LBoxContact').val();">Show Contact</a></li>
+                                    <li><a href="#" onclick="window.location.href='./Addcontact.aspx';">Add Contact</a></li>
+                                    <li><a href="javascript:;">Delete Contact</a></li>
+                                    <li class="nav-divider"></li>
+                                    <li><a href="http://www.facebook.com"><i class="glyphicon glyphicon-off"></i>Later dude</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="CPHMain" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="right">
+            <asp:ContentPlaceHolder ID="CPHRight" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="foot">
+            <asp:ContentPlaceHolder ID="CPHFoot" runat="server">
+                <p>
+                    mailto: <a href="mailto:jonas@meljoner.se">jonas@meljoner.se</a>
+                </p>
+            </asp:ContentPlaceHolder>
+        </div>
+     
+    </form>
+</body>
+</html>
